@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Check if there is an existing impression count in local storage
+            let impressionCount = localStorage.getItem("impressionCount");
+
+            // If no count exists, set it to 0
+            if (impressionCount === null) {
+                impressionCount = 0;
+            }
+
+            // Increment the impression count
+            impressionCount++;
+
+            // Update the count in local storage
+            localStorage.setItem("impressionCount", impressionCount);
+
+            // Display the count on the page
+            document.getElementById("impressionCount").innerText = impressionCount;
+        });
+    </script>
+
+	<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZD25CQ9194"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ZD25CQ9194');
+</script>
+<style>
+    .dark-icon {
+        color: #000000; /* This will make the icon darker */
+        text-shadow: 1px 1px 2px #555; /* This will give the icon a 3D effect */
+    }
+</style>
+	<title>Yash Naik Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+	
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script defer src="/_vercel/insights/script.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">YASH</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education & Experience</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
+					<li class="nav-item"><a href="#services-section" class="nav-link"><span>Expertise</span></a></li>
+					<li class="ftco-animate" style="font-size: 24px; margin-right: 30px;"><a href="https://github.com/yashnaik1" target="_blank"><span class="icon-github"></span></a></li>
+					<li class="ftco-animate" style="font-size: 24px; margin-right: 20px;"><a href="https://www.linkedin.com/in/yash-naik-0027/" target="_blank"><span class="icon-linkedin"></span></a></li>
+					<li class="ftco-animate"style="font-size: 24px;"><a href="mailto:yashnaikworks@gmail.com"><span class="icon-mail_outline"></span></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<section id="home-section" class="hero">
+		<div class="home-slider  owl-carousel">
+			<div class="slider-item ">
+				<div class="overlay"></div>
+				<div class="container">
+					<div class="row d-md-flex no-gutters slider-text align-items-end justify-content-end"
+						data-scrollax-parent="false">
+						<div class="one-third js-fullheight order-md-last img" style="background-image:url(images/newone.JPG);background-size: 750px 450px;background-position-y: 30%;">
+							<div class="overlay"></div>
+						</div>
+						<div class="one-forth d-flex  align-items-center ftco-animate"
+							data-scrollax=" properties: { translateY: '70%' }">
+							<div class="text">
+								<span class="subheading">Hi! Welcome to my Portfolio</span>
+								<h1 class="mb-4 mt-3">I'm <span>Yash Naik</span></h1>
+								<h2>I'm a Data
+									<span class="txt-rotate" data-period="100"
+										data-rotate='["Engineer.", "Scientist.", "Architect."]'></span>
+								</h2>
+								<p><a href="https://www.linkedin.com/in/yashnaik0027/" target="_blank" class="btn btn-primary py-3 px-4">My LinkedIn</a> <a href="#projects-section"
+										class="btn btn-white btn-outline-white py-3 px-4">My Projects</a></p>
+							</div>
+
+						</div>
+					</div>
+				</div>
+	</section>
+
+	<section class="ftco-about img ftco-section ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex">
+				<div class="col-md-6 col-lg-5 d-flex">
+					<div class="img-about img d-flex align-items-stretch">
+						<div class="overlay"></div>
+						<!--<div class="img d-flex align-self-stretch align-items-center"
+							style="background-image:url(images/IMG_2859\.jpg);">-->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-7 pl-lg-5 pb-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<p>I'm Yash Naik, a driven data enthusiast and cloud computing aficionado with 
+								a knack for mastering cutting-edge technologies. Armed with industry-recognized 
+								certifications and hands-on experience, I seamlessly blend data expertise with 
+								strategic management. In my last role, I not only transformed complex data into 
+								actionable insights but also made work smoother for my colleagues by leveraging cloud solutions.
+								I'm passionate about pushing boundaries and leading in the data and cloud computing space, making a tangible impact wherever I go.</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Name:</span> <span>Yash Naik</span></li>
+								<li class="d-flex"><span>Address:</span> <span>California, USA</span></li>
+								<li class="d-flex"><span>Email:</span> <span>yashnaikworks@gmail.com</span></li>
+								<li class="d-flex"><span>Phone: </span> <span>+1(562)-509-6281</span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p><a href="https://drive.google.com/file/d/1qcsyN85xFcfmO2D_Iby1PCYCXyDlPzJn/view?usp=sharing" download="Yash Naik Resume"
+									target="_blank" class="btn btn-primary py-3 px-3">Download CV</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-no-pb" id="resume-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-10 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Education & Experience</h1>
+					<h2 class="mb-4">Education & Experience</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 animated fadeInUp">
+					<h2 class="fw-normal section-heading font-grey"></h2>
+					<ul class="timeline mt-4 pr-md-5">
+						<li class="education">
+							<div class="title">AUG 2024 - Present</div>
+							<div class="details">
+								<h5>Master of Science in Information Systems</h5>
+								<small class="organization">California State University, Long Beach</small>
+								<p><b>Coursework:</b> Business Data Analysis, Python, Machine Learning, AWS.</p>
+							</div>
+						</li>
+						<li class="experience">
+							<div class="title">JAN 2022 - JUN 2023</div>
+							<div class="details">
+								<h5>Associate Software Consultant</h5>
+								<small class="organization">Capita India</small>
+								<p><b>Responsibilities</b></p>
+								<p>● Developed and optimized SQL databases, including designing stored procedures for custom reports, improving query performance and boosting data retrieval efficiency by 30% across 10+ high-impact applications.</p>
+								<p>● Managed and executed data configuration and migration for over 20 products from on-premises to cloud environments, ensuring smooth transitions and reliable data integration with a 100% success rate.</h3></p>
+								<p>● Configured and optimized Azure cloud services, including building CI/CD pipelines for 10+ projects, reducing deployment time by 20% and ensuring 99.9% uptime for critical systems.</p>
+								<p>● Led and managed the full product lifecycle, collaborating with product owners to deliver 4 major projects. Streamlined processes, reduced development time by 25%, and enhanced performance by 15%. Additionally, conducted product UAT demo meetings with clients.</p>
+								<p>● Developed and implemented over 10 new features and modified 5 existing ones using HTML, CSS, JavaScript, and React.js resulting in a 20% increase in user engagement and enhanced overall product functionality.</p>
+							</div>
+							<div class="title">AUG 2021 - DEC 2021</div>
+							<div class="details">
+								<h5>Cloud Engineering Intern</h5>
+								<small class="organization">F13 Technologies</small>
+								<p><b>Responsibilities</b></p>
+								<p>● Participated in 40+ hours of AWS cloud training programs, gaining hands-on experience in redesigning 3+ AWS cloud architectures for clients, resulting in a 20% improvement in cost efficiency and system performance.</p>
+								<p>● Proposed and implemented 3+ new ideas that improved cloud infrastructure efficiency by 15%, reducing latency and increasing system reliability.</p>
+								<p>● Assisted in deploying and managing cloud infrastructure by configuring and maintaining over 50 AWS resources, including EC2 instances, S3 buckets, and RDS databases.</p>
+								<p>● Supported the implementation of cloud security best practices and compliance requirements while monitoring system performance across 30+ AWS resources and creating reports to ensure optimal resource utilization.</p>
+							</div>
+						</li>
+		
+						<li class="education">
+							<div class="title">AUG 2019 - JUN 2022</div>
+							<div class="details">
+								<h5>Bachelor’s in Computer Engineering</h5>
+								<small class="organization">Savitribai Phule Pune University</small>
+								<p><b>Coursework:</b> Data Structure and Algorithms, Database management systems, Cloud Computing, OOP, Data Science, Data Analytics.</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+
+			</div>
+			<div class="row justify-content-center mt-5">
+				<div class="col-md-6 text-center ftco-animate">
+					<p><a href="https://drive.google.com/file/d/1qcsyN85xFcfmO2D_Iby1PCYCXyDlPzJn/view?usp=sharing" download=" Yash Naik Resume" target="_blank"
+							class="btn btn-primary py-4 px-5">Download CV</a></p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section ftco-project" id="projects-section">
+		<div class="container">
+			<div class="row justify-content-center pb-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Projects</h1>
+					<h2 class="mb-4"> Projects</h2>
+					<h3 class="mb-5">Coming Soon ...</h3>					
+				</div>
+			</div>
+			<!--<div class="row">
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/NFL.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>NFL Prediction: Tochdowns</h3>
+								<span>Predictive Modeling</span>
+							<div class="links">
+								<a href="https://github.com/yashnaik/NFL-prediction-touchdowns" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="https://github.com/yash/Tableau-dashboard-NETFLIX-replica?tab=readme-ov-file" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/Netflix.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Netflix Dashboard</h3>
+								<span>Tableau</span>
+								<div class="links">
+									<a href="https://github.com/yash/Tableau-dashboard-NETFLIX-replica?tab=readme-ov-file" target="_blank" class="github-link">
+										<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/adidas.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Adidas Sales Analysis</h3>
+								<span>Excel, Python, Tableau</span>
+							<div class="links">
+								<a href="https://github.com/yash/Adidas-Sales-Analysis" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/Flushot.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>Flu Shot Data Analysis</h3>
+								<span>PostgreSQL, Tableau</span>
+							<div class="links">
+								<a href="https://github.com/yash/Flu-Shot-Data-Analysis-using-PostgreSQL-and-Tableau" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4">
+					<a href="" target="_blank">
+						<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+							style="background-image: url(images/Covid19.jpg);">
+							<div class="overlay"></div>
+							<div class="text text-center p-4">
+								<h3>COVID-19 Global Impact: Trends and Responses</h3>
+								<span>Excel, Pyhton-Machine Learning</span>
+							<div class="links">
+								<a href="" target="_blank" class="github-link">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+							</div>
+						</div>
+					</a>
+				</div>		
+				<div class="col-md-4">
+					<div class="project img ftco-animate d-flex justify-content-center align-items-center"
+						style="background-image: url(images/LondonBikes.jpg);">
+						<div class="overlay"></div>
+						<div class="text text-center p-4">
+							<h3>London, Biking and Weather</h3>
+							<span>Pyhton, SQL, Tableau</span>
+							<div class="links">
+								<a href="https://github.com/yash/London-in-Data-Biking-Trails-and-Weather-Tales" target="_blank" class="github-link">
+									<!--<img src="images/github-logo.png" alt="GitHub" style="width:px;height:1000px;">
+									<i class="fab fa-github fa-2x dark-icon"><h6>Github</h6></i>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>				
+			</div>-->
+		</div>
+	</section>
+
+	<section class="ftco-section" id="skills-section">
+		<div class="skills-section sections" id='skills'>
+			<div class="container py-3">
+				<div class="row justify-content-center py-5 mt-5">
+					<div class="col-md-12 heading-section text-center ftco-animate">
+						<h1 class="big big-2">Skills and Tools</h1>
+						<h2 class="mb-4">Skills and Tools</h2>
+					</div>
+				</div>
+				<div class="row py-3">
+					<div class="col-lg-12">
+						<div class='px-lg-3 skill-tab'>
+							<div class="row">
+								<div class="col-3">
+									<img src="images/python.png">
+									<p>Python</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/R.png">
+									<p>R</p>
+								</div>
+								<div class="col-3">
+									<img src="images/SQL.png">
+									<p>MySQL</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/aws.png"/>
+									<p>AWS</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/git.png" />
+									<p>Git</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/jira.png" />
+									<p>Jira</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/postgresql.png" />
+									<p>PostgreSQL</p>
+								</div>
+								<div class="col-3">
+									<img src="images/icons8-oracle-logo-48.png" />
+									<p>Oracle</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/pandas-PhotoRoom.png" />
+									<p>Pandas</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/Numpy.png" />
+									<p>NumPy</p>
+								</div>
+								<div class="col-3">
+									<img src="images/my_skills/matplot.svg" />
+									<p>matplotlib</p>
+								</div>
+								<div class="col-3">
+									<img src="images/icons8-tableau-software-48.png" />
+									<p>Tableau</p>
+								</div>
+								<div class="col-3">
+									<img src="images/icons8-power-bi-48.png" />
+									<p>Power BI</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="services-section">
+		<div class="container">
+			<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Area Of Expertise</h1>
+					<h2 class="mb-4">Area Of Expertise</h2>
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Data Analytics & Science</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Data Visualization</h3>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Data Modelling</h3>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 text-center d-flex ftco-animate">
+					<a href="#" class="services-1">
+						
+						<div class="desc">
+							<h3 class="mb-5">Multi-Cloud Certified</h3>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+</html>
